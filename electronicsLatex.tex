@@ -1,0 +1,80 @@
+\documentclass[leqno,b5paper]{book}
+\usepackage{./tex/khalidUrduBooksElectronics}                     %my sty file
+
+
+\input{./tex/myUrduCommandsElectronics.tex}                  %turning latex into urdu
+\input{./tex/myUrduGreek.tex}
+%\input{./tex/myElectronicsVariablesBetter.tex}         %these are all tested. to use at the very end when book is finished
+
+\graphicspath{{./fig/figFrontPage/}{./fig/figOPAMP/}{./fig/figDiode/}{./fig/figBJT/}{./fig/figFrequencyResponse/}{./fig/figDifferencePair/}{./fig/figMOSFET/}{./fig/figFeedback/}{./fig/figOscillators/}{./fig/figQuestions/}}		%paths to figures
+
+\includeonly{./tex/electronicsSymbols,./tex/electronicsPreface,./tex/prefaceFirstBook,./tex/electronicsOPAMP,./tex/electronicsDiode,./tex/electronicsBJT,./tex/electronicsMOSFET,./tex/electronicsFrequencyResponse,./tex/electronicsDifferencePair,./tex/electronicsFeedback,./tex/electronicsOscillators}  %this decides what is included
+
+%\includeonly{./tex/electronicsSymbols,./tex/electronicsPreface,./tex/prefaceFirstBook}
+
+
+\author{
+خالد خان یوسفزئی\\
+{\small {کامسیٹ انسٹیٹیوٹ آف انفارمیشن ٹیکنالوجی، اسلام آباد}}\\
+\texttt{khalidyousafzai@comsats.edu.pk}
+}
+
+\title{مماثل برقیات}
+\date{}                           %if absent gives date in arabic which is a rubbish
+
+%\makeindex
+
+%====================
+
+
+\begin{document}
+\begin{urdufont}
+
+\renewcommand*{\contentsname}{عنوان}    %this command has to be placed right here
+
+\frontmatter                          %just added instead of \pagenumbering{roman}
+%%\pagenumbering{roman}    
+
+\maketitle
+
+\tableofcontents
+\pagestyle{empty}
+\include{./tex/electronicsPreface}
+\include{./tex/prefaceFirstBook}
+\include{./tex/electronicsSymbols}
+
+\mainmatter                      %added this
+%%\pagenumbering{arabic}   %instead of this
+
+\pagestyle{headings}
+
+
+\include{./tex/electronicsOPAMP}
+\include{./tex/electronicsDiode}
+\include{./tex/electronicsBJT}
+\include{./tex/electronicsMOSFET}
+\include{./tex/electronicsDifferencePair}
+\include{./tex/electronicsFrequencyResponse}
+\include{./tex/electronicsFeedback}
+\include{./tex/electronicsOscillators}
+
+
+%\input{electronicsChapter1}             %only chapter-1 gives WARNING invalid CMAP entries
+%\input{electronicsChapter2}
+%\input{electronicsChapter3}
+%\input{electronicsChapter4}
+%\input{electronicsChapter5}
+%\input{electronicsChapter6}
+%\input{electronicsChapter7}
+
+
+\backmatter
+
+\renewcommand*{\indexname}{فرہنگ}      %this command has to be placed right here just before printindex command
+\cleardoublepage
+\addcontentsline{toc}{chapter}{فرہنگ}
+\printindex
+
+
+\end{urdufont}
+\end{document}

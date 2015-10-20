@@ -1,0 +1,18 @@
+InfoKey:Title
+InfoValue:مماثل برقیات
+InfoKey: Author
+InfoValue:خالد خان یوسفزئی
+InfoKey: Subject
+InfoValue:برقیات
+InfoKey: Creator
+InfoValue: Bidi v1.0.3 &lt;revision 82&gt; Copyright &#169; 2009 Vafa Khalighi
+InfoKey: Producer
+InfoValue: xdvipdfmx (0.7.8)
+InfoKey: Keywords
+InfoValue: engineering ;electronics ; urdu
+InfoKey: CreationDate
+InfoValue: D:20141010173702+05'00'
+InfoKey: ModDate
+InfoValue:D:20141024173702+05'00'
+InfoKey: Paper Size
+InfoValue: B5
