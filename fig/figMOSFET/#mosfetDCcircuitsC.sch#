@@ -1,0 +1,56 @@
+v 20110115 2
+C 44400 45500 1 90 0 resistor-1.sym
+{
+T 44000 45800 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 44100 48100 1 0 0 voltageSource.sym
+C 43300 45200 1 0 0 gnd-1.sym
+N 43800 46800 43400 46800 4
+C 44200 45200 1 0 0 gnd-1.sym
+C 43500 45500 1 90 0 resistor-1.sym
+{
+T 43100 45800 5 10 0 0 90 0 1
+device=RESISTOR
+}
+B 39000 44200 6600 4800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+C 39300 42700 1 0 0 nmosEnhancementA.sym
+{
+T 39900 43200 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+}
+C 43800 46400 1 0 0 nmosEnhancementA.sym
+{
+T 44400 46900 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+}
+C 44400 47200 1 90 0 resistor-1.sym
+{
+T 44000 47500 5 10 0 0 90 0 1
+device=RESISTOR
+}
+N 43400 46800 43400 46400 4
+C 40500 48100 1 0 0 voltageSource.sym
+C 40600 46100 1 0 0 gnd-1.sym
+C 40200 46400 1 0 0 nmosEnhancementA.sym
+{
+T 40800 46900 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+}
+C 40800 47200 1 90 0 resistor-1.sym
+{
+T 40400 47500 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 39300 48100 1 0 1 voltageSource.sym
+C 39200 46100 1 0 1 gnd-1.sym
+C 39600 46400 1 0 1 nmosEnhancementA.sym
+{
+T 39000 46900 5 10 0 0 0 6 1
+device=NMOS_TRANSISTOR
+}
+C 39000 47200 1 270 1 resistor-1.sym
+{
+T 39400 47500 5 10 0 0 90 2 1
+device=RESISTOR
+}

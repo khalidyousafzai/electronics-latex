@@ -1,0 +1,58 @@
+v 20110115 2
+C 44100 47400 1 0 0 nmosEnhancementA.sym
+{
+T 44700 47900 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+}
+C 41600 47400 1 0 0 nmosDepletionA.sym
+{
+T 42300 48200 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+T 42300 48400 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 44700 46300 1 90 0 resistor-1.sym
+{
+T 44300 46600 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 42200 46300 1 90 0 resistor-1.sym
+{
+T 41800 46600 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 44500 46000 1 0 0 gnd-1.sym
+C 42000 46000 1 0 0 gnd-1.sym
+C 44400 48200 1 0 0 voltageSource.sym
+C 41900 48200 1 0 0 voltageSource.sym
+N 42100 47400 42100 47200 4
+N 44600 47400 44600 47200 4
+B 35300 45100 10600 4400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+C 39900 46300 1 90 0 resistor-1.sym
+{
+T 39500 46600 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 37400 46300 1 90 0 resistor-1.sym
+{
+T 37000 46600 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 39700 46000 1 0 0 gnd-1.sym
+C 37200 46000 1 0 0 gnd-1.sym
+C 39600 48200 1 0 0 voltageSource.sym
+C 37100 48200 1 0 0 voltageSource.sym
+N 37300 47400 37300 47200 4
+N 39800 47400 39800 47200 4
+C 36800 47400 1 0 0 pmosDepletionA.sym
+{
+T 37500 48200 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+T 37500 48400 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 39300 47400 1 0 0 pmosEnhancementA.sym
+{
+T 39900 47900 5 10 0 0 0 0 1
+device=PMOS_TRANSISTOR
+}

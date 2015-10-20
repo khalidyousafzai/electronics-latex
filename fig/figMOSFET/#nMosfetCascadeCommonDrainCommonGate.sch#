@@ -1,0 +1,74 @@
+v 20110115 2
+C 43500 48000 1 0 0 nmosEnhancementA.sym
+{
+T 44100 48500 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+}
+C 46800 47400 1 270 1 nmosEnhancementA.sym
+{
+T 47300 48000 5 10 0 0 90 2 1
+device=NMOS_TRANSISTOR
+}
+C 44100 46900 1 90 0 resistor-1.sym
+{
+T 43700 47200 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 43000 46900 1 90 0 resistor-1.sym
+{
+T 42600 47200 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 46200 47000 1 90 0 resistor-1.sym
+{
+T 45800 47300 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 48400 47000 1 90 0 resistor-1.sym
+{
+T 48000 47300 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 50900 47000 1 90 0 resistor-1.sym
+{
+T 50500 47300 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 49100 47700 1 0 0 capacitor-1.sym
+{
+T 49300 48400 5 10 0 0 0 0 1
+device=CAPACITOR
+T 49300 48600 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 44600 47700 1 0 0 capacitor-1.sym
+{
+T 44800 48400 5 10 0 0 0 0 1
+device=CAPACITOR
+T 44800 48600 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 41700 48200 1 0 0 capacitor-1.sym
+{
+T 41900 48900 5 10 0 0 0 0 1
+device=CAPACITOR
+T 41900 49100 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 46300 47000 1 180 0 voltageSource.sym
+C 48500 47000 1 180 0 voltageSource.sym
+C 41100 47000 1 0 0 gnd-1.sym
+C 42800 46600 1 0 0 gnd-1.sym
+C 47100 47100 1 0 0 gnd-1.sym
+C 50700 46700 1 0 0 gnd-1.sym
+C 41000 47300 1 0 0 kvoltageVertical.sym
+{
+T 41000 48300 5 8 0 0 0 0 1
+device=VOLTAGE_SOURCE
+}
+C 50800 48000 1 270 0 kpin.sym
+C 44200 46900 1 180 0 voltageSource.sym
+C 43800 48800 1 0 0 voltageSource.sym
+N 44000 48000 44000 47800 4
+N 43500 48400 42700 48400 4
+N 42700 48400 42700 48300 4

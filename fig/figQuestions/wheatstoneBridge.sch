@@ -1,0 +1,11 @@
+v 20110115 2
+C 43200 46200 1 0 0 wheatstoneBridge.sym
+{
+T 42600 46300 5 10 0 0 0 0 1
+device=RESISTOR
+}
+C 43800 47800 1 0 0 voltageSource.sym
+C 43900 45900 1 0 0 gnd-1.sym
+C 43200 46900 1 90 0 vcc-3.sym
+C 44800 47100 1 270 0 vcc-3.sym
+B 42300 45400 3600 3000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1

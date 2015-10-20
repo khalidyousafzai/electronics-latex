@@ -1,0 +1,26 @@
+v 20110115 2
+C 45700 50900 1 0 0 nmosDepletionA.sym
+{
+T 46400 51700 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+T 46400 51900 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 43500 50900 1 0 0 nmosEnhancementA.sym
+{
+T 44100 51400 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+}
+B 43000 49500 4200 2500 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+C 45700 49600 1 0 0 pmosDepletionA.sym
+{
+T 46400 50400 5 10 0 0 0 0 1
+device=NMOS_TRANSISTOR
+T 46400 50600 5 10 0 0 0 0 1
+symversion=0.1
+}
+C 43500 49600 1 0 0 pmosEnhancementA.sym
+{
+T 44100 50100 5 10 0 0 0 0 1
+device=PMOS_TRANSISTOR
+}

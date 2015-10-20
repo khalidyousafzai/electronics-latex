@@ -1,0 +1,84 @@
+v 20110115 2
+C 48800 46200 1 0 0 npn-2.sym
+{
+T 49400 46700 5 10 0 0 0 0 1
+device=NPN_TRANSISTOR
+}
+C 51200 46200 1 0 0 npn-2.sym
+{
+T 51800 46700 5 10 0 0 0 0 1
+device=NPN_TRANSISTOR
+}
+C 46400 46200 1 0 0 npn-2.sym
+{
+T 47000 46700 5 10 0 0 0 0 1
+device=NPN_TRANSISTOR
+}
+C 49400 47200 1 90 0 resistor-1.sym
+{
+T 49000 47500 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 51800 47200 1 90 0 resistor-1.sym
+{
+T 51400 47500 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 47000 47200 1 90 0 resistor-1.sym
+{
+T 46600 47500 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 51800 44400 1 90 0 resistor-1.sym
+{
+T 51400 44700 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 44600 46600 1 0 0 resistor-1.sym
+{
+T 44900 47000 5 10 0 0 0 0 1
+device=RESISTOR
+}
+C 46400 46800 1 180 0 resistor-1.sym
+{
+T 46100 46400 5 10 0 0 180 0 1
+device=RESISTOR
+}
+C 51800 45300 1 90 0 resistor-1.sym
+{
+T 51400 45600 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 49400 45300 1 90 0 resistor-1.sym
+{
+T 49000 45600 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 49200 45000 1 0 0 gnd-1.sym
+C 51600 44100 1 0 0 gnd-1.sym
+C 46800 45900 1 0 0 gnd-1.sym
+C 49200 48100 1 0 0 vcc-3.sym
+C 51600 48100 1 0 0 vcc-3.sym
+C 46800 48100 1 0 0 vcc-3.sym
+C 48800 46600 1 90 0 vcc-3.sym
+C 51200 46600 1 90 0 vcc-3.sym
+C 44600 46600 1 90 0 vcc-3.sym
+C 42200 46200 1 0 0 npn-2.sym
+{
+T 42800 46700 5 10 0 0 0 0 1
+device=NPN_TRANSISTOR
+}
+C 42800 47200 1 90 0 resistor-1.sym
+{
+T 42400 47500 5 10 0 0 90 0 1
+device=RESISTOR
+}
+C 42200 46800 1 180 0 resistor-1.sym
+{
+T 41900 46400 5 10 0 0 180 0 1
+device=RESISTOR
+}
+C 42600 45900 1 0 0 gnd-1.sym
+C 42600 48100 1 0 0 vcc-3.sym
+C 41300 46600 1 90 0 vcc-3.sym
+B 40000 42600 13300 7800 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1

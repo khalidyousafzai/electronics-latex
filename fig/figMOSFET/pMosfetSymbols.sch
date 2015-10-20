@@ -1,0 +1,22 @@
+v 20110115 2
+C 43200 52500 1 0 0 pmosEnhancementA.sym
+{
+T 43800 53000 5 10 0 0 0 0 1
+device=PMOS_TRANSISTOR
+T 43900 53100 5 10 1 1 0 0 1
+refdes=Q?
+}
+C 44300 52500 1 0 0 pmosEnhancementB.sym
+{
+T 44900 53000 5 10 0 0 0 0 1
+device=PMOS_TRANSISTOR
+T 45000 53100 5 10 1 1 0 0 1
+refdes=Q?
+}
+C 45900 52400 1 0 0 pmosEnhancementC.sym
+{
+T 46500 52900 5 10 0 0 0 0 1
+device=PMOS_TRANSISTOR
+T 46600 53000 5 10 1 1 0 0 1
+refdes=Q?
+}
