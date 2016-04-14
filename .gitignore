@@ -8,4 +8,7 @@
 *.ilg
 *.toc
 *.urd
+.sconsign.dblite
+*.fls
+*.synctex
 
