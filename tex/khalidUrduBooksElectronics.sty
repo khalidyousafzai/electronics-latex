@@ -38,14 +38,11 @@
 %\linenumbers												%for line numbers in pdf
 
 
-\setmainlanguage[numerals=maghrib]{arabic}     %for english numbers use numerals=maghrib, for arabic numerals=arabicdigits
+\setmainlanguage[numerals=western]{urdu}     %for english numbers use numerals=western, for arabic numerals=arabicdigits
 \setotherlanguages{english}
 
 
-% \newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
-\newfontfamily\arabicfont[Scale=1.25,WordSpace=6.0,Script=Arabic]{Jameel Noori Nastaleeq}
-\let\arabicfonttt\ttfamily
-% \newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+\let\arabicfonttt\ttfamily                  % If this line is not present xelatex throws an error
 \newfontfamily\urdufont[Scale=1.25,WordSpace=6.0,Script=Arabic]{Jameel Noori Nastaleeq}
 
 \setlength{\parskip}{5mm plus4mm minus3mm}
