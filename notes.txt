@@ -1,0 +1,3 @@
+1. Fix kharra zabar, comma, shad, .etc being displayed below text.
+2. Add bold font to Nastaleeq. Use in highlighting terminologies.
+3. Comma might be inverted
