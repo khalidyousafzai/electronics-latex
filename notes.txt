@@ -1,3 +1,4 @@
 1. Fix kharra zabar, comma, shad, .etc being displayed below text.
 2. Add bold font to Nastaleeq. Use in highlighting terminologies.
 3. Commas are inverted in urdu part of index
+4. Columns are flipped (horizontally) for english entries in the index
