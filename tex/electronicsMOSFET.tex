@@ -81,7 +81,7 @@ i_D &=i_S= i_{DS}
 
 شکل \حوالہ{شکل_بڑھاتے_ماسفیٹ_کے_خط_منفی} الف میں سورس خطہ برقی زمین یعنی صفر وولٹ پر ہے جبکہ گیٹ پر \عددی{v_{GS}} برقی دباو ہے۔ یوں یہاں گیٹ اور سلیکان پتری کے مابین \عددی{(v_{GS}-0=v_{GS})}  برقی دباو پایا جاتا ہے اور پیدا کردہ راہ کی گہرائی اضافی برقی دباو یعنی \عددی{(v_{GS}-V_t)} پر منحصر ہو گی جسے شکل میں \عددی{g_1} کہا گیا ہے۔اسی شکل میں ڈرین خطہ \عددی{v_{DS}} وولٹ پر ہے اور یوں یہاں پیدا کردہ راہ کی گہرائی \عددی{(v_{GS}-v_{DS}-V_t)} کے اضافی برقی دباو پر منحصر ہو گی جسے شکل میں \عددی{g_2} کہا گیا ہے۔آپ دیکھ سکتے ہیں کہ \عددی{g_2} کی مقدار \عددی{g_1} سے کم ہے۔یوں پیدا کردہ راہ تکونی شکل اختیار کر لے گا۔ \عددی{v_{DS}} کی مقدار صفر ہونے کی صورت میں \عددی{g_1} اور \عددی{g_2} برابر ہوتے ہیں اور \موٹا{پیدا کردہ راہ کی مزاحمت} یعنی  \موٹا{چالو ماسفیٹ کی مزاحمت}
 \begin{align}\label{مساوات_ماسفیٹ_چالو_ماسفیٹ_کی_مزاحمت}
-\textup{مزاحمت}=\frac{\textup{لمبائی}}{\textup{مستقل کا موصلیت} \times \textup{رقبہ}}=\frac{L}{\sigma W g}
+\textup{مزاحمت}=\frac{\textup{لمبائی}}{\textup{موصلیت کا مستقل} \times \textup{رقبہ}}=\frac{L}{\sigma W g}
 \end{align}
  کے برابر ہوتی ہے۔ \عددی{v_{DS}} کی مقدار صفر وولٹ سے بڑھانے سے \عددی{g_2}  کم ہوتا ہے اور پیدا کردہ راہ کی مزاحمت بڑھتی ہے جس سے \عددی{v_{DS} - i_{DS}}  خط کی ڈھلوان کم ہو گی۔شکل  الف میں بڑھتے \عددی{v_{DS}} کے ساتھ \عددی{v_{DS}  - i_{DS}} خط کی ڈھلوان بتدریج کم ہوتی دکھائی گئی ہے۔
 
@@ -118,8 +118,8 @@ v_{GS} \le V_t
 \جزوحصہء{چالو}
 \begin{gather} \label{مساوات_میدانی_کارکردگی_کے_خطے}
 \begin{aligned}
-v_{GS}-v_{DS} & \ge V_t &&&& \textup{افزائندہ غیر}\\
-v_{GS}-v_{\textup{DSدبوچ}} &=V_t &&&& \textup{دبوچ نقطہ }\\
+v_{GS}-v_{DS} & \ge V_t &&&& \textup{غیر افزائندہ}\\
+v_{GS}-v_{\textup{DSدبوچ}} &=V_t &&&& \textup{نقطہ دبوچ}\\
 v_{GS}-v_{DS}& \le V_t &&&& \textup{افزائندہ}
 \end{aligned}
 \end{gather}
@@ -127,8 +127,8 @@ v_{GS}-v_{DS}& \le V_t &&&& \textup{افزائندہ}
 \begin{gather} \label{مساوات_میدانی_کارکردگی_کے_خطے_الف}
 \begin{aligned}
 v_{GS} & \le  V_t &&&& \textup{منقطع}\\
-v_{DS}& \le v_{GS}-V_t &&&& \textup{افزائندہ غیر}\\
-v_{\textup{DSدبوچ}}& = v_{GS}-V_t &&&& \textup{دبوچ نقطہ }\\
+v_{DS}& \le v_{GS}-V_t &&&& \textup{غیر افزائندہ}\\
+v_{\textup{DSدبوچ}}& = v_{GS}-V_t &&&& \textup{نقطہ دبوچ}\\
 v_{DS} & \ge v_{GS}-V_t &&&&\textup{افزائندہ}
 \end{aligned}
 \end{gather}
@@ -136,8 +136,8 @@ v_{DS} & \ge v_{GS}-V_t &&&&\textup{افزائندہ}
 \begin{gather}
 \begin{aligned}
 v_{GS} & \le  V_t &&&& \textup{منقطع}\\
-v_{GD}& \ge V_t &&&& \textup{افزائندہ غیر}\\
-v_{\textup{GDدبوچ}}& =  V_t &&&& \textup{دبوچ نقطہ }\\
+v_{GD}& \ge V_t &&&& \textup{غیر افزائندہ}\\
+v_{\textup{GDدبوچ}}& =  V_t &&&& \textup{نقطہ دبوچ}\\
 v_{GD} & \le V_t &&&&\textup{افزائندہ}
 \end{aligned}
 \end{gather}
@@ -203,12 +203,17 @@ v_{\textup{DSدبوچ}}=v_{GS}-V_t
 مندرجہ بالا تذکرے کو مدِ نظر رکھتے ہوئے \عددی{n} ماسفیٹ کی  \عددی{{i_{DS}-v_{DS}}} مساوات حاصل کرتے ہیں۔ایسا کرتے وقت سورس سرے کو برقی زمین (یعنی صفر وولٹ) پر رکھا جائے گا جبکہ گیٹ کو \عددی{v_{GS}}  اور ڈرین سرے کو  \عددی{v_{DS}}  پر رکھا جائے گا۔مزید یہ کہ \عددی{{v_{GS}-v_{DS}> V_t}} رکھا گیا ہے۔
 
 پیدا کردہ راہ میں سورس سے ڈرین خطے کی جانب فاصلے کو \عددی{x} لیتے ہوئے سورس جانب \عددی{x=0} اور برقی دباو صفر وولٹ ہو گا جبکہ ڈرین جانب \عددی{x=L} اور برقی دباو \عددی{v_{DS}}  ہو گا۔ان دو حدود کے درمیان کسی بھی نقطہ  \عددی{x} پر برقی دباو کو ہم \عددی{v(x)} لکھتے ہیں۔
-
+\begin{figure}
+\centering
+\includegraphics{figMOSFETcapacitor}
+\caption{گیٹ اور راہ بطور دو چادر کپیسٹر کردار ادا کرتے ہیں۔}
+\label{شکل_ماسفیٹ_گیٹ_راہ_کپیسٹر}
+\end{figure}
 گیٹ اور پیدا کردہ راہ (یعنی \عددی{n} قسم کا موصل) بطور دو چادر کے \موٹا{کپیسٹر}\حاشیہب{parallel plate capacitor}  کا کردار ادا کریں گے۔پیدا کردہ راہ میں لمبائی کے رُخ نقطہ \عددی{x}  پر ذرہ سی لمبائی \عددی{\Delta x} پر غور کرتے ہیں۔یہ لمبائی بطور  کپیسٹنس \عددی{\Delta C} کردار ادا کرے گا جہاں
 \begin{align}
 \Delta C=\frac{\epsilon \times \textup{رقبہ}}{\textup{فاصلہ}}=\frac{\epsilon  W \Delta x}{d}
 \end{align}
-ہو گا۔اس کپیسٹر کو شکل میں دکھایا گیا ہے۔
+ہو گا۔اس کپیسٹر کو شکل \حوالہ{شکل_ماسفیٹ_گیٹ_راہ_کپیسٹر} میں دکھایا گیا ہے۔
 
 آپ کپیسٹر کی مساوات \عددی{Q=C \times V} سے بخوبی آگاہ ہوں گے۔اس مساوات کے مطابق کپیسٹر کے مثبت چادر پر چارج  \عددی{Q}  کی مقدار  کپیسٹر کے دو چادروں کے مابین برقی دباو \عددی{V}  پر منحصر ہوتا ہے۔کپیسٹر کے منفی چادر پر \عددی{(-Q)}   چارج پایا جاتا ہے۔ماسفیٹ کے کپیسٹر \عددی{\Delta C}  پر بھی  اسی طرح چارج پایا جائے گا مگر اس کا تخمینہ لگانے کی خاطر اس مسئلہ کو زیادہ گہرائی سے دیکھنا ہو گا۔آئیں ایسا ہی کرتے ہیں۔
 
@@ -336,16 +341,16 @@ i_{DS}&=0
 \تحریر{nMOSFET}  کو غیر افزائندہ خطے میں استعمال کرنے کی خاطر گیٹ اور سورس کے مابین \عددی{V_t}  سے زیادہ برقی دباو مہیا کیا جاتا ہے اور ڈرین-سورس سروں کے مابین برقی دباو کو راہ دبوچ برقی دباو \زیرنوشت{v}{DS}{دبوچ} سے کم رکھا جاتا ہے یعنی
 \begin{gather}
 \begin{aligned}
-v_{GS} & > V_t &&&& \textup{راہ کردہ پیدا}\\
-v_{DS}&  \le v_{\textup{DSدبوچ}}  &&&& \textup{دبوچ نقطہ }\\
+v_{GS} & > V_t &&&& \textup{راہ پیدا}\\
+v_{DS}&  \le v_{\textup{DSدبوچ}}  &&&& \textup{نقطہ دبوچ}\\
 & \le v_{GS}-V_t
 \end{aligned}
 \end{gather}
 اسی طرح \تحریر{nMOSFET}  کو افزائندہ خطے میں استعمال کرنے کی خاطر گیٹ اور سورس کے مابین \عددی{V_t} سے زیادہ برقی دباو  مہیا کیا جاتا ہے اور ڈرین-سورس سروں کے مابین برقی دباو کو راہ دبوچ برقی دباو \زیرنوشت{v}{DS}{دبوچ}  سے زیادہ رکھا جاتا ہے یعنی
 \begin{gather}
 \begin{aligned}
-v_{GS}& > V_t &&&& \textup{راہ کردہ پیدا}\\
-v_{DS}& \ge v_{\textup{DSدبوچ}} &&&& \textup{دبوچ نقطہ }\\
+v_{GS}& > V_t &&&& \textup{راہ پیدا}\\
+v_{DS}& \ge v_{\textup{DSدبوچ}} &&&& \textup{نقطہ دبوچ}\\
 & \ge v_{GS}-V_t
 \end{aligned}
 \end{gather}
@@ -1411,7 +1416,7 @@ i_d&=i_s=i_{ds}=g_m v_{gs}
 
 حل:دگنی تعدد کا حصہ \عددی{\tfrac{k_n V_p^2}{4} \cos (2 \omega t)} ہے۔یوں
 \begin{align*}
-\frac{\textrm{جزو بگڑا}}{\textrm{جزو اصل}}=\frac{V_p}{4 \left(V_{GS}-V_t \right)}
+\frac{\textrm{بگڑا جزو}}{\textrm{اصل جزو}}=\frac{V_p}{4 \left(V_{GS}-V_t \right)}
 \end{align*}
 حاصل ہوتا ہے۔اس طرح
 \begin{align*}
@@ -1535,7 +1540,7 @@ R_i=\frac{v_s}{i_s}=\frac{R_G}{3.823}=\SI{2.6}{\mega \ohm}
 \begin{figure}
 \centering
 \includegraphics[scale=0.90]{mosfetCommonSourceAmplifierWithSourceResistor}
-\caption{مشترک ایمٹر بمعہہ ایمٹر مزاحمت}
+\caption{مشترک ایمٹر بمع ایمٹر مزاحمت}
 \label{شکل_ماسفیٹ_مخارج_مزاحمت_کے_ساتھ}
 \end{figure}
 
@@ -1569,7 +1574,7 @@ A_v=\frac{v_L}{v_i}=\SI{-5.4}{\volt \per \volt}
 \begin{figure}
 \centering
 \includegraphics[scale=0.90]{mosfetCommonSourceAmplifierWithSourceResistorEquivalent}
-\caption{مشترک ایمٹر بمعہہ ایمٹر مزاحمت کا باریک اشاراتی مساوی دور}
+\caption{مشترک ایمٹر بمع ایمٹر مزاحمت کا باریک اشاراتی مساوی دور}
 \label{شکل_ماسفیٹ_مخارج_مزاحمت_کے_ساتھ_مساوی}
 \end{figure}
 \انتہا{مثال}
@@ -2533,7 +2538,7 @@ A_v=\left(\frac{0.00209^2 \times 2500}{1+2 \times 0.00209 \times 2500}\right)  \
 \begin{align*}
 v_{GS} & > V_t, \hspace{2mm} v_{GD}\ge V_t\\
 i_{DS}&=k_n' \left(\frac{W}{L} \right) \left[\left(v_{GS}-V_t\right)v_{DS}-\frac{v_{DS}^2}{2} \right]\\
-\textrm{مزاحمت}&=\frac{1}{k_n'\left(\frac{W}{L}\right)\left(v_{GS}-V_t \right)} \hspace{5mm} \textrm{پر دباو برقی کم}
+\textrm{مزاحمت}&=\frac{1}{k_n'\left(\frac{W}{L}\right)\left(v_{GS}-V_t \right)} \hspace{5mm} \textrm{کم برقی دباو پر مزاحمت}
 \end{align*}
 
 \جزوجزوحصہء{افزائندہ}
@@ -2549,7 +2554,7 @@ i_{DS}&=\frac{k_n'}{2} \left(\frac{W}{L} \right) \left(v_{GS}-V_t\right)^2\left(
 \begin{align*}
 v_{SG} &> -V_t, \hspace{2mm} v_{DG}\ge -V_t\\
 i_{SD}&=k_p' \left(\frac{W}{L} \right) \left[\left(v_{SG}+V_t\right)v_{SD}-\frac{v_{SD}^2}{2} \right]\\
-\textrm{مزاحمت}&=\frac{1}{k_p'\left(\frac{W}{L}\right)\left(v_{SG}+V_t \right)} \hspace{5mm} \textrm{پر دباو برقی کم}
+\textrm{مزاحمت}&=\frac{1}{k_p'\left(\frac{W}{L}\right)\left(v_{SG}+V_t \right)} \hspace{5mm} \textrm{کم برقی دباو پر مزاحمت}
 \end{align*}
 
 \جزوجزوحصہء{افزائندہ}

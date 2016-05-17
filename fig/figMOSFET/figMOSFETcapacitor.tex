@@ -1,0 +1,38 @@
+\documentclass{standalone}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{bm}	
+\usepackage{commath}									%differentiation symbols
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{3d,shadings,fadings,intersections}
+
+\input{../../tex/myEMTvectors.tex}
+
+  \setmainlanguage{english}
+\setotherlanguages{arabic}
+\newfontfamily\arabicfont[Scale=1.0,Script=Arabic]{Scheherazade}
+\newfontfamily\urdufont[Scale=1.0,Script=Arabic]{XB Tabriz}
+\begin{document}
+\begin{tikzpicture}[x={(-0.5cm,-0.5cm)},y={(1cm,0cm)},z={(0cm,1cm)}]
+%
+\pgfmathsetmacro{\kx}{1.5}
+\pgfmathsetmacro{\ky}{2}
+\pgfmathsetmacro{\kz}{0.5}
+%\draw[thick,gray] (-3,-4) grid (3,3);
+%\draw[thin,gray,step=0.2] (-3,-4) grid (3,3);
+%plates
+\draw (0,0,0)--++(\kx,0,0)--++(0,\ky,0)--++(-\kx,0,0)--cycle;
+\shade[gray] (0,1.1,0)--++(\kx,0,0)--++(0,0.2,0)--++(-\kx,0,0)--cycle;
+\draw[fill=white,opacity=1] (0,0,\kz)--++(\kx,0,0)--++(0,\ky,0)--++(-\kx,0,0)--cycle;
+\shade[gray] (0,1.1,\kz)--++(\kx,0,0)--++(0,0.2,0)--++(-\kx,0,0)--cycle;
+%text
+\draw[stealth-stealth] (\kx,-0.3,0)--++(0,0,\kz)node[pos=0.5,left]{$d$};
+\draw[stealth-stealth] (\kx,-0.3,\kz)--++(-\kx,0,0)node[pos=0.6,left]{$W$};
+\draw[stealth-stealth](0,0,\kz+0.4)--++(0,\ky,0)node[pos=0.5,fill=white]{$L$};
+\draw[-stealth](\kx,0,-0.3)--++(0,1.1,0)node[pos=0.5,fill=white]{$x$}coordinate(kXX);
+\draw[stealth-] (kXX)++(0,0.2,0)--++(0,0.3,0)--++(0.3,0.3,0)node[right]{$\Delta x$};
+%
+\end{tikzpicture}%
+\end{document} 
