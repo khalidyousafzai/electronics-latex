@@ -1,5 +1,6 @@
 \ProvidesPackage{khalidUrduBooksElectronics}
 \usepackage{fontspec}
+\usepackage{upgreek}            % Used to access the up-right greek sybmols used for SI units
 \usepackage{makeidx}
 \usepackage{amsmath}                                                                         %\tfrac for fractions in text
 \usepackage{mathtools}
@@ -16,6 +17,9 @@
 
 \usepackage{siunitx} 			%SI units that meets iso-31 regulations such as \micro, \degree \SI{3}{\celsius}
 \sisetup{per=frac,fraction=nice}    %setup for siunitx
+% The Greek symbols in units were not working so we defined these explicitly using symbols from the upgreek package
+\sisetup{math-micro=\text{$\upmu$},text-micro=$\upmu$}
+\sisetup{math-ohm=\text{$\upOmega$},text-ohm=$\upOmega$}
 
 \usepackage{steinmetz}		%\phase to show angle of phasors
 \usepackage[version=3]{mhchem}     %chemical symbols such as \ce{H2O}
