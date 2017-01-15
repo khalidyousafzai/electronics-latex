@@ -16,6 +16,7 @@
 \newcommand*{\تحریر}[1]{\textenglish{#1}}	% english text in urduMode
 \newcommand*{\موٹا}[1]{\textbf{#1}}
 \newcommand*{\ترچہ}[1]{{\textit{#1}}}
+\newcommand*{\اصطلاح}[1]{{\color{red}{#1}}}
 
 %end commands cannot be redefined and as such these two are not usable
 \providecommand*{\ابتدا}[1]{\begin{#1}}
@@ -47,13 +48,17 @@
 %itemize, bullets and numbered items   
 \newcommand*{\اشیاء}{itemize}                               %used in   \begin{itemize}
 \newcommand*{\شے}[1]{\item {#1}}			%used in    \item
-
+%description
+\newcommand*{\جزو}[1]{\item[#1]}
 %maths commands
 \newcommand*{\عددی}[1]{\: \ensuremath{#1} \:} % in-line math & inside math mode
 \newcommand*{\عددیء}[1]{\ensuremath{#1}}
+\newcommand*{\سمتیہ}[1]{\ensuremath{{\bf{#1}}}}
+\newcommand*{\سمتیازیرنوشت}[2]{\ensuremath{{\boldsymbol{#1}}_{\textup{#2}}}}
+
 \newcommand*{\ضرب}{\time}					%multiplication symbol
 \newcommand*{\نکطہد}{\cdot}
-\newcommand*{\نکطےد}{\cdots}
+\newcommand*{\نقطے}{\ensuremath{\cdots}}
 
 \newcommand*{\زیرنوشت}[3]{\: \ensuremath{{#1_{#2 \textrm {#3}}}} \:}   %english+urdu subscript \زیرنوشت{V}{CE}{غیرافزائندہ}
 \newcommand*{\سیدھازیرنوشت}[2]{\: \ensuremath{{#1_{\textup{#2}}}} \:} %RC
@@ -61,7 +66,8 @@
 \newcommand*{\قریب}[1]{\mbox{#1}}
 
 \renewcommand{\indexname}{فرہنگ}        %apparently did nothing
-%================================
+%===============================
+
 
 %numbering scheme
 \renewcommand*{\thefigure}{\arabic{figure}.\thechapter}
@@ -102,3 +108,15 @@
 \newenvironment*{سوال}				
 {\noindent\ignorespaces  سوال \refstepcounter{questioncounter} \thequestioncounter :}%
 {\par\noindent }
+%--------------------
+
+%defining a LAW   قانون
+
+\newcounter{lawcounter}[chapter]
+\renewcommand{\thelawcounter}{\arabic{lawcounter}.\thechapter}
+
+\newenvironment*{قانون}				
+{\par\medskip \refstepcounter{lawcounter} }%
+{\par\medskip }
+%--------------------
+
