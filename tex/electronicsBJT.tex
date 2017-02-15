@@ -132,7 +132,7 @@ $\beta = \frac{\alpha}{1-\alpha}=\frac{0.999}{1-0.999}=\num{999}$
 \عددی{\beta=74} کے لئے \عددی{\alpha} حاصل کریں۔
 
 حل:
-$\alpha=\frac{\beta}{\beta+1} =\frac{74}{74+1}=\num{0.986}$
+$\alpha=\frac{\beta}{\beta+1} =\frac{74}{74+1}=\num{0.987}$
 \انتہا{مثال}
 %=================
 \ابتدا{مثال}
@@ -142,9 +142,9 @@ $\alpha=\frac{\beta}{\beta+1} =\frac{74}{74+1}=\num{0.986}$
 	الیکٹران کا بار \عددی{\SI{-1.6e-19}{\coulomb}} لیتے ہوئے
 \begin{gather}
 \begin{aligned}
-I_E&=nq=6 \times 10^{15} \times 1.6 \times 10^{-19}=9.6 \times 10^{-4}=\SI{0.96}{\milli \ampere}\\
-I_C&=\alpha I_E = 0.995 \times 0.96 \times 10^{-4}=\SI{0.9552}{\milli \ampere}\\
-I_B&=I_E-I_C=\SI{4.8}{\micro \ampere}
+I_E&=-nq=6 \times 10^{15} \times 1.6 \times 10^{-19}=9.6 \times 10^{-4}=\SI{0.96}{\milli \ampere}\\
+I_C&=\alpha I_E = 0.993 \times 0.96 \times 10^{-3}=\SI{0.95328}{\milli \ampere}\\
+I_B&=I_E-I_C=\SI{6.78}{\micro \ampere}
 \end{aligned}
 \end{gather}
 \انتہا{مثال}
@@ -324,14 +324,14 @@ V_{CE} & \approx V_{CC}-I_C (R_C+R_E)\\
 یوں\عددی{I_C=\alpha I_E = 0.99 \times \SI{0.5}{\milli \ampere}=\SI{0.495}{\milli \ampere}} جبکہ مساوات \حوالہ{مساوات_ٹرانزسٹر_کا_بنیادی_دور_خارجی_جانب}   سے
 \begin{align*}
 V_{CE} &= V_{CC} -I_C R_C - I_E R_E\\
-&=12-0.495 \times 10^{-3} \times 10000-0.5 \times 10^{-3} \times 1000\\
+&=12-(0.495 \times 10^{-3} \times 10000)-(0.5 \times 10^{-3} \times 1000)\\
 &=\SI{6.55}{\volt}
 \end{align*}
 چونکہ حاصل کردہ \عددی{V_{CE}} کی قیمت \زیرنوشت{V}{CE}{غیرافزائندہ} سے زیادہ ہے لہٰذا ٹرانزسٹر  افزائندہ حال ہے اور یوں یوں تمام حاصل کردہ جوابات درست ہیں۔
 
 آپ دیکھ سکتے ہیں کہ \عددی{\alpha}  کی قیمت ایک (\عددی{1}) تصور کر کے یعنی اس کے اثر کو نظر انداز کرتے ہوئے \عددی{I_C} کی قیمت \عددی{\SI{0.495 }{\milli \ampere}}  کے بجائے \عددی{\SI{0.5}{\milli \ampere}} حاصل ہوتی ہے۔دونوں جوابات میں صرف \عددی{\SI{1.01}{\percent}}  فرق ہے یعنی
 \begin{align*}
-\frac{0.495 \times 10^{-3} -0.5 \times 10^{-3}}{0.495 \times 10^{-3}} \times 100 = \SI{1.01}{\percent}
+\abs{\frac{0.495 \times 10^{-3} -0.5 \times 10^{-3}}{0.495 \times 10^{-3}}} \times 100 = \SI{1.01}{\percent}
 \end{align*}
 اسی طرح دونوں مثالوں میں حاصل کئے گئے برقی دباو \عددی{V_{CE}}  میں \عددی{0.76}  فی صد کا فرق ہے یعنی
 \begin{align*}
@@ -455,13 +455,13 @@ V_C&=V_{CC}-I_{C}R_{C}\\
 \begin{align*}
 V_E&=I_{E}R_{E}\\
 &=0.4444 \times 10^{-3} \times 900\\
-&=\SI{0.4}{\volt} 
+&\approx \SI{0.4}{\volt} 
 \end{align*}
 %
 \begin{align*}
 V_B&=V_E+V_{BE}\\
 &=0.4+0.7\\
-&=\SI{1.1}{\volt}
+&= \SI{1.1}{\volt}
 \end{align*}
 %
 \begin{align*}
@@ -526,7 +526,7 @@ V_C&=-V_{CC}+I_{C}R_{C}\\
 \begin{align*}
 V_E&=-I_{E}R_{E}\\
 &=-0.4444 \times 10^{-3} \times 900\\
-&=\SI{-0.4}{\volt}
+&\approx \SI{-0.4}{\volt}
 \end{align*}
 %
 \begin{align*}
