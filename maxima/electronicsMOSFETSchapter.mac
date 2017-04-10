@@ -43,3 +43,16 @@ eqPmosfetTriode:kp*((Vsg+Vt)*Vsd-Vsd^2/2)=Isd;
 eqNmosfetSaturation:kn/2*(Vgs-Vt)^2=Ids;
 
 solve(eqNmosfetSaturation,Vgs);
+/*=========================*/
+kill(all);
+print("ex4.31");
+
+
+Vt:2.5;
+kn:0.1*10^(-3);
+
+eq:kn/2*((6-5600*Ids)-Vt)^2=Ids;
+
+solve(eq,Ids);
+float(%);
+rect(%);
