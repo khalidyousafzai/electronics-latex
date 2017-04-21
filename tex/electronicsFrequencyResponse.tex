@@ -668,7 +668,7 @@ R_1=\SI{2.2}{\kilo \ohm}, R_2=\SI{16}{\kilo \ohm}, R_s=\SI{1}{\kilo \ohm}\\
 \end{itemize}
 
 حل:
-نقطہ کارکردگی حاصل کرتے وقت تمام کپیسٹر کھلے سرے کردار ادا کرتے ہیں۔مسئلہ تھونن کی مدد سے \عددی{R_{th}=\SI{1.934}{\kilo \ohm}} جبکہ \عددی{V_{th}=\SI{1.0879}{\volt}} حاصل ہوتے ہیں جن سے \عددیء{I_{CQ}=\SI{1.768}{\milli \ampere}}، \عددی{g_m=\SI{0.071}{\milli \siemens}} اور \عددی{r_{be}=\SI{1.394}{\kilo \ohm}} حاصل ہوتے ہیں۔یوں \عددی{R_{m1}=\SI{810}{\ohm}} حاصل ہوتا ہے۔
+نقطہ کارکردگی حاصل کرتے وقت تمام کپیسٹر کھلے سرے کردار ادا کرتے ہیں۔مسئلہ تھونن کی مدد سے \عددی{R_{th}=\SI{1.934}{\kilo \ohm}} جبکہ \عددی{V_{th}=\SI{1.0879}{\volt}} حاصل ہوتے ہیں جن سے \عددیء{I_{CQ}=\SI{1.768}{\milli \ampere}}، \عددی{g_m=\SI{0.071}{\siemens}} اور \عددی{r_{be}=\SI{1.394}{\kilo \ohm}} حاصل ہوتے ہیں۔یوں \عددی{R_{m1}=\SI{810}{\ohm}} حاصل ہوتا ہے۔
 \begin{itemize}
 \item
 \begin{align*}
@@ -1395,7 +1395,7 @@ C_{b'e} r_e &= \frac{C_{b'e} r_{b'e}}{\beta} =\frac{1}{\beta \omega_{\beta}}=\fr
 لہٰذا \عددی{f_1} تعدد پر \عددی{\abs{A_i}} ناپ کر \عددی{f_T} کی قیمت کا تخمینہ لگایا جاتا ہے۔\عددی{f_T} کو استعمال کرتے ہوئے مساوات \حوالہ{مساوات_تعددی_ردعمل_کپیسٹر_کا_تخمینہ} سے \عددی{C_{b'e}}  کی قیمت حاصل کی جاتی ہے۔
 
 \ابتدا{مثال}
-ایک ٹرانزسٹر جس کا \عددیء{\beta=200}،\عددی{I_{CQ}=\SI{0.75}{mA}} اور \عددی{f_{\beta}=\SI{1.3}{\mega \hertz}} ہے کا \عددی{\SI{6.5}{\mega \hertz}} کے تعدد  پر \عددی{\abs{A_i}_{v_{ce}}=0} ناپتے ہوئے \عددی{\SI[per=frac,fraction=nice]{41.5}{\ampere \per \ampere}}حاصل ہوتا ہے۔اس کی \عددی{f_T} کا تخمینہ لگاتے ہوئے \عددی{C_{b'e}} حاصل کریں۔
+ایک ٹرانزسٹر جس کا \عددیء{\beta=200}،\عددی{I_{CQ}=\SI{0.75}{mA}} اور \عددی{f_{\beta}=\SI{1.3}{\mega \hertz}} ہے کا \عددی{\SI{6.5}{\mega \hertz}} کے تعدد  پر \عددی{\abs{A_i}_{v_{ce}=0}} ناپتے ہوئے \عددی{\SI[per=frac,fraction=nice]{41.5}{\ampere \per \ampere}}حاصل ہوتا ہے۔اس کی \عددی{f_T} کا تخمینہ لگاتے ہوئے \عددی{C_{b'e}} حاصل کریں۔
 
 حل: مساوات \حوالہ{مساوات_تعددی_ردعمل_کسر_دور_انقطاعی_تعدد_تخمینہ} کی مدد سے
 \begin{align*}
@@ -1592,8 +1592,8 @@ R_B=\frac{R_1 R_2}{R_1+R_2}=\frac{7000 \times 2800}{7000+2800}=\SI{2}{\kilo \ohm
 \end{figure}
 اس شکل میں نقطہ دار لکیر کے بائیں جانب کا مساوی تھونن دور لیتے ہوئے شکل \حوالہ{شکل_تعددی_ردعمل_ماسفیٹ_مشترکہ_مخارج_نارٹن_تھونن_بار_بار} ب حاصل ہوتا ہے جہاں تھونن مساوی مقدار
 \begin{align*}
-\left(\frac{R_B}{R_S+R_B}\right) v_s &=0.625 v_s \hspace{5mm} \textrm{دباو برقی تھونن}\\
-R_S \mathbin{\|} R_B &= \SI{750}{\ohm} \hspace{5mm}\textrm{مزاحمت تھونن}
+\left(\frac{R_B}{R_S+R_B}\right) v_s &=0.625 v_s \hspace{5mm} \text{\RL{تھونن دباو}}\\
+R_S \mathbin{\|} R_B &= \SI{750}{\ohm} \hspace{5mm}\text{\RL{تھونن مزاحمت}}
 \end{align*}
 ہیں۔شکل \حوالہ{شکل_تعددی_ردعمل_ماسفیٹ_مشترکہ_مخارج_نارٹن_تھونن_بار_بار} ب کے نقطہ دار لکیر سے بائیں جانب حصے کا اب مساوی نارٹن دور لیتے ہیں جسے شکل \حوالہ{شکل_تعددی_ردعمل_ماسفیٹ_مشترکہ_مخارج_نارٹن_تھونن_بار_بار_الف} الف میں دکھایا گیا ہے جہاں نارٹن مساوی برقی رو 
 \begin{align*}
@@ -1761,7 +1761,7 @@ v_1&=\left[\frac{sC_{b'e}+\frac{\beta+1}{r_{b'e}}+\frac{1}{R_e}}{sC_{b'e}+\frac{
 &\left(\frac{1}{r_s}+sC_{b'c}+sC_{b'e}+\frac{1}{r_{b'e}} \right) \left[1+\frac{1}{R_e \left(sC_{b'e}+\frac{\beta+1}{r_{b'e}}\right)}\right] v_e\\
 &\hspace{6cm}\qquad{}=\frac{v_s}{r_s}+v_e \left(sC_{b'e}+\frac{1}{r_{b'e}} \right)
 \end{align*}
-جہاں دوسرے قدم پر مساوات \حوالہ{مساوات_تعددی_ردعمل_مشترکہ_محاصل_سادہ_الف} کا استعمال کیا گیا۔بائیں ہاتھ کے کسر کو کھولتے ہیں
+جہاں دوسرے قدم پر مساوات \حوالہ{مساوات_تعددی_ردعمل_مشترکہ_محاصل_سادہ_الف} کا استعمال کیا گیا۔بائیں ہاتھ کے قوسین کو کھولتے ہیں
 \begin{align*}
 \left(\frac{1}{r_s}+sC_{b'c}+sC_{b'e}+\frac{1}{r_{b'e}} \right) v_e +\left[\frac{\frac{1}{r_s}+sC_{b'c}+sC_{b'e}+\frac{1}{r_{b'e}}}{R_e \left(sC_{b'e}+\frac{\beta+1}{r_{b'e}} \right)}\right] v_e\\
 \hspace{6cm} =\frac{v_s}{r_s}+v_e \left(sC_{b'e}+\frac{1}{r_{b'e}} \right)
@@ -1788,7 +1788,7 @@ v_1&=\left[\frac{sC_{b'e}+\frac{\beta+1}{r_{b'e}}+\frac{1}{R_e}}{sC_{b'e}+\frac{
 \begin{align*}
 \left[\frac{\frac{R_e\left(\beta+1 \right)}{r_{b'e}} \left(\frac{j \omega}{\omega_T}+1 \right)\left(1+\frac{j \omega}{\omega_1}\right)+\left(1+\frac{j \omega}{\omega_1}\right)+\frac{r_s}{r_{b'e}}\left(\frac{j \omega}{\omega_{\beta}}+1\right)}{\frac{R_e\left(\beta+1 \right)}{r_{b'e}} \left(\frac{j \omega}{\omega_T}+1 \right)}\right] v_e=v_s
 \end{align*}
-لکھا جا سکتا ہے۔کسر کے اوپر حصے میں تمام قوصین کھولتے ہوئے اس مساوات کو یوں لکھا جا سکتا ہے
+لکھا جا سکتا ہے۔کسر کے بالائی حصے میں تمام قوسین کھولتے ہوئے اس مساوات کو یوں لکھا جا سکتا ہے
 \begin{align*}
 \frac{A+j \omega B +\left(j \omega \right)^2  C}{\frac{R_e\left(\beta+1 \right)}{r_{b'e}} \left(\frac{j \omega}{\omega_T}+1 \right)}=\frac{v_s}{v_e}
 \end{align*}
