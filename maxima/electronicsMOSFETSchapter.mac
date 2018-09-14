@@ -30,7 +30,24 @@ eqPmosfetA:(Vsg+Vt)*Vsd-Vsd^2/2=Isd;
 
 solve(eqPmosfet,Ids);
 solve(eqPmosfetA,Isd);
+
 /*=========================*/
+kill(all);
+print("ex4.6");
+
+Vt:-3;
+kn:0.2*10^(-3);
+Vdd:10;
+Rd:4700;
+Vds:Vdd-Ids*Rd;
+Vgs:Vdd-Ids*Rd;
+eqNmosfetTriode:expand(kn*((Vgs-Vt)*Vds-Vds^2/2)=Ids);
+
+solve(eqNmosfetTriode,Ids);
+/*=========================*/
+
+
+
 kill(all);
 print("ex4.31");
 
