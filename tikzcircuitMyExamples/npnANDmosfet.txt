@@ -1,0 +1,37 @@
+include this figure in a text document to check it. The accompanying PDF gives the figure.
+
+
+\begin{figure}
+\centering
+\begin{subfigure}{0.33\textwidth}
+\centering
+\begin{circuitikz}
+\ctikzset{tripoles/mos style/arrows}
+\ctikzset{bipoles/length=0.5cm}
+\draw(0,0) node[nmos,anchor=G](nmos1){} (nmos1.G) to [short]++(-0.25,0) node[ground]{} (nmos1.S) to [resistor,-o,l={$R_S$}]++(0,-1)node[left]{$\SI{-5}{\volt}$} (nmos1.D) to [resistor,-o,l_={$R_D$}]++(0,1)node[left]{$\SI{5}{\volt}$} (nmos1.D) to [short,*-o]++(0.25,0)node[right]{$V_D=\SI{1}{\volt}$};
+\end{circuitikz}
+\caption{fig-1}
+\end{subfigure}%
+\begin{subfigure}{0.33\textwidth}
+\centering
+\begin{circuitikz}
+\ctikzset{tripoles/mos style/arrows}
+\ctikzset{bipoles/length=0.5cm}
+\draw(0,0) node[nmos,anchor=G](nmos1){}(nmos1.S) to [resistor,l={$\SI{6}{\kilo\ohm}$}]++(0,-1)node[ground]{} (nmos1.D) to [resistor,l_={$\SI{8}{\kilo\ohm}$}]++(0,1)coordinate(kT){}to [short,-o]++(0,0.2)node[left]{$\SI{10}{\volt}$} (nmos1.D) to [short,*-o]++(0.25,0)node[right]{$V_D$};
+\draw  (nmos1.G)node[circ]{} to [short]++(0,0.25) to [resistor,l={$\SI{10}{\mega\ohm}$}]++(0,1)|-(kT)node[circ]{} (nmos1.G) to [resistor,l_={$\SI{5}{\mega\ohm}$}]++(0,-1.75)node[ground]{} (nmos1.S) to [short,*-o]++(0.25,0)node[right]{$V_S$};
+\end{circuitikz}
+\caption{fig-2}
+\end{subfigure}%
+\begin{subfigure}{0.33\textwidth}
+\centering
+\begin{circuitikz}
+\ctikzset{tripoles/mos style/arrows}
+\ctikzset{bipoles/length=0.5cm}
+\draw(0,0) node[npn](Q1){};
+\draw(Q1.B) to [short,-o]++(-0.25,0)node[left]{$+\frac{v_d}{2}$} (Q1.E) to [short]++(0.5,0)coordinate(kE){} to [short]++(0.5,0) node[npn,anchor=E,xscale=-1](Q2){} (Q2.B) to [short,-o]++(0.25,0)node[right]{$-\frac{v_d}{2}$} (kE) to [short]++(0,-1) node[npn,anchor=C](Q3){} (Q3.E)to [short,-*] ++(0,-0.25)coordinate(kB){} to [short,-o]++(0.25,0)node[right]{$\SI{-10}{\volt}$} (Q3.B) to [short,-*]++(-0.2,0)coordinate(M){} to [short]++(-0.2,0) node[npn,anchor=B,xscale=-1](Q4){} (Q4.E) |-(kB) (M)|- (Q4.C) to [resistor,*-,l_={$\SI{9.3}{\kilo\ohm}$}]++(0,1) to [short]++(-0.25,0)node[ground]{} (Q1.C) to [resistor,l={$\substack{R_{C1}\\ \SI{10}{\kilo\ohm}}$}]++(0,1)coordinate(kT){} (Q2.C) to [resistor,-*,l_={$\substack{R_{C2}\\ \SI{10}{\kilo\ohm}}$}]++(0,1)coordinate(kR){} to [short,-o]++(0.25,0)node[right]{$\SI{10}{\volt}$} (kT) |-(kR) (Q1.C) to [short,*-o]++(-0.25,0)node[left]{$V_{C1}$} (Q2.C) to [short,*-o]++(0.25,0)node[right]{$V_{C2}$};
+\draw($(Q1.C)!0.5!(Q2.C)$) node[font=\small]{$- V_0+$};
+\end{circuitikz}
+\caption{fig-3}
+\end{subfigure}%
+\end{figure}
+
