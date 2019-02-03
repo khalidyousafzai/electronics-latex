@@ -2,6 +2,10 @@
 \usepackage{./tex/khalidUrduBooksElectronics}                     %my sty file
 \sisetup{math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega}   %with mathpazo this is needed else must not be here. now size of micro is smaller
 
+\newtagform{brackets}{)}{(}   			%mathtools command to correct braces around equation numbers
+\usetagform{brackets}				%had to do this after ubuntu upgrade messed up braces around eq numbers.
+
+
 \input{./tex/myUrduCommandsElectronics.tex}                  %turning latex into urdu
 \input{./tex/myUrduGreek.tex}
 %\input{./tex/myElectronicsVariablesBetter.tex}         %these are all tested. to use at the very end when book is finished
