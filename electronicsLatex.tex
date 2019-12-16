@@ -1,7 +1,17 @@
 \documentclass[leqno,b5paper]{book}
+\usepackage[siunitx,arrowmos,oldvoltagedirection]{circuitikz}
 \usepackage{./tex/khalidUrduBooksElectronics}                     %my sty file
 \sisetup{math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega}   %with mathpazo this is needed else must not be here. now size of micro is smaller
 
+\pgfmathsetmacro{\x}{2}     %smallest resistor sizes
+\pgfmathsetmacro{\y}{2}
+\pgfmathsetmacro{\xx}{2.5}   %somewhat larger resistor leads. gives more space
+\pgfmathsetmacro{\yy}{2.5}
+\pgfmathsetmacro{\xxx}{3}   %still larger resistor leads. gives even more space
+\pgfmathsetmacro{\yyy}{3}
+\pgfmathsetmacro{\dx}{0.2}     %moving labels beyond resistor outline
+\pgfmathsetmacro{\dy}{0.2}
+\pgfmathsetmacro{\pin}{0.3}
 
 
 \input{./tex/myUrduCommandsElectronics.tex}                  %turning latex into urdu
@@ -12,7 +22,7 @@
 
 \includeonly{./tex/electronicsSymbols,./tex/electronicsPreface,./tex/prefaceFirstBook,./tex/electronicsOPAMP,./tex/electronicsDiode,./tex/electronicsBJT,./tex/electronicsMOSFET,./tex/electronicsDifferencePair,./tex/electronicsFrequencyResponse,./tex/electronicsFeedback,./tex/electronicsOscillators}     %this decides what is included
 
-%\includeonly{./tex/electronicsSymbols,./tex/electronicsPreface,./tex/prefaceFirstBook,./tex/electronicsOPAMP}
+%\includeonly{./tex/electronicsSymbols,./tex/electronicsPreface,./tex/prefaceFirstBook,./tex/electronicsDifferencePair}
 
 
 \author{
