@@ -1,5 +1,5 @@
 \documentclass[leqno,b5paper]{book}
-\usepackage[siunitx,arrowmos,oldvoltagedirection]{circuitikz}
+\usepackage[siunitx,arrowmos,RPvoltages]{circuitikz}
 \usepackage{./tex/khalidUrduBooksElectronics}                     %my sty file
 \sisetup{math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega}   %with mathpazo this is needed else must not be here. now size of micro is smaller
 
@@ -34,7 +34,7 @@
 }
 
 \title{مماثل برقیات}
-\date{}                           %if absent gives date in arabic which is a rubbish
+%\date{}                           %if absent gives date in arabic which is a rubbish
 
 %included the following to correct the RTL issues with equation numbering after upgradation to ubuntu 18.04
 %might break bidi package as said on the internet
@@ -51,9 +51,9 @@
 
 
 \begin{document}
-\begin{urdufont}
+\sloppy
 
-\renewcommand*{\contentsname}{عنوان}    %this command has to be placed right here
+%\renewcommand*{\contentsname}{عنوان}    %this command has to be placed right here
 
 \frontmatter                          %just added instead of \pagenumbering{roman}
 %%\pagenumbering{roman}    
@@ -82,22 +82,12 @@
 \include{./tex/electronicsOscillators}
 
 
-%\input{electronicsChapter1}             %only chapter-1 gives WARNING invalid CMAP entries
-%\input{electronicsChapter2}
-%\input{electronicsChapter3}
-%\input{electronicsChapter4}
-%\input{electronicsChapter5}
-%\input{electronicsChapter6}
-%\input{electronicsChapter7}
-
-
 \backmatter
 
-\renewcommand*{\indexname}{فرہنگ}      %this command has to be placed right here just before printindex command
+%\renewcommand*{\indexname}{فرہنگ}      %this command has to be placed right here just before printindex command
 \cleardoublepage
-\addcontentsline{toc}{chapter}{فرہنگ}
+\addcontentsline{toc}{chapter}{اشاریہ}
 \printindex
 
 
-\end{urdufont}
 \end{document}
