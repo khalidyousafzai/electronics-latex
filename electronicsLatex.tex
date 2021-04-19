@@ -1,7 +1,11 @@
 \documentclass[leqno,b5paper]{book}
 \usepackage[siunitx,arrowmos,RPvoltages]{circuitikz}
 \usepackage{./tex/khalidUrduBooksElectronics}                     %my sty file
-\sisetup{math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega}   %with mathpazo this is needed else must not be here. now size of micro is smaller
+\sisetup{
+math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega,text-degree=°,
+  math-degree=\textup{°},
+  text-celsius=℃,
+  math-celsius=\textup{℃},}   %with mathpazo this is needed else must not be here. now size of micro is smaller
 
 \pgfmathsetmacro{\x}{2}     %smallest resistor sizes
 \pgfmathsetmacro{\y}{2}
