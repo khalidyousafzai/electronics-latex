@@ -677,7 +677,7 @@ I_{DS}&=k_n \left[\left(V_{GS}-V_t \right )V_{DS} -\frac{V_{DS}^{2}}{2}\right ]\
 \end{align*}
 سے
 \begin{align*}
-I_{DS}&=1.26\mp j 0.46 \,{\milli \ampere}
+I_{DS}&=1.26\mp j 0.46 \,\si{\milli \ampere}
 \end{align*}
 حاصل ہوتا ہے۔یہ مخلوط جوابات ہیں۔ غیر حقیقی برقی رو معنی نہیں رکھتی لہٰذا ماسفیٹ کے غیر افزائندہ ہونے کو رد کیا جاتا ہے۔
 \انتہا{مثال}
@@ -1493,7 +1493,7 @@ V_{DS}=\SI{4.5}{\volt},\hspace{3mm} I_{DS}=\SI{0.625}{\milli \ampere}
 \begin{align*}
 g_m&=k_n \left(V_{GS}-V_t \right)\\
 &=0.2 \times 10^{-3} \left(4.5-2 \right)\\
-&=\SI[per=frac,fraction=nice]{0.5}{\milli \ampere \per \volt}
+&=\SI{0.5}{\milli \ampere \per \volt}
 \end{align*}
 اور  خارجی مزاحمت \عددی{r_o} کی قیمت
 \begin{align*}
@@ -1513,7 +1513,7 @@ v_L& \approx -g_m v_{gs} \overbrace{\left(r_o \mathbin{\|} R_D \mathbin{\|} R_L 
 \end{align*}
 حاصل ہوتا ہے۔چونکہ \عددی{v_{gs}} اور \عددی{v_s} برابر ہیں لہٰذا 
 \begin{align*}
-A_v=\frac{v_L}{v_s}=\SI[per=frac,fraction=nice]{-2.823}{\volt \per \volt}
+A_v=\frac{v_L}{v_s}=\SI{-2.823}{\volt \per \volt}
 \end{align*}
 حاصل ہوتا ہے۔چونکہ \عددی{R_G} میں برقی رو
 
@@ -1813,7 +1813,7 @@ i_{DS}=8 \times 10^{-3} \left[1-\left(\frac{-1.4}{-3} \right) \right]^2= \SI{2.2
 \end{align*}
 حاصل ہوتا ہے جس سے
 \begin{align*}
-\frac{\Delta i_{DS}}{\Delta v_{GS}}=\frac{\SI{2.2756}{mA}-\SI{2}{mA}}{(-1.4)-(-1.5)}=\SI[per=frac,fraction=nice]{2.756}{\milli \ampere \per \volt}
+\frac{\Delta i_{DS}}{\Delta v_{GS}}=\frac{\SI{2.2756}{mA}-\SI{2}{mA}}{(-1.4)-(-1.5)}=\SI{2.756}{\milli \ampere \per \volt}
 \end{align*}
 حاصل ہوتا ہے۔مساوات \حوالہ{مساوات_افزائش_فیٹ} کے تحت
 \begin{align*}
@@ -1899,11 +1899,11 @@ R_o&=R_D=\SI{1.2}{k \ohm}
 
 مساوات \حوالہ{مساوات_افزائش_فیٹ} کی مدد سے
 \begin{align*}
-g_m=\frac{-2 \times 8 \times 10^{-3}}{-3} \sqrt{\frac{5 \times 10^{3}}{8 \times 10^{-3}}}=\SI[per=frac,fraction=nice]{4.216}{\milli \ampere \per \volt}
+g_m=\frac{-2 \times 8 \times 10^{-3}}{-3} \sqrt{\frac{5 \times 10^{3}}{8 \times 10^{-3}}}=\SI{4.216}{\milli \ampere \per \volt}
 \end{align*}
 اور یوں
 \begin{align*}
-A_v=\frac{v_o}{v_s}=-g_m R_D=-4.216 \times 10^{-3} \times 1.2 \times 10^3=\SI[per=frac,fraction=nice]{-5.059}{\volt \per \volt}
+A_v=\frac{v_o}{v_s}=-g_m R_D=-4.216 \times 10^{-3} \times 1.2 \times 10^3=\SI{-5.059}{\volt \per \volt}
 \end{align*}
 حاصل ہوتا ہے۔
 \انتہا{مثال}
@@ -2014,7 +2014,7 @@ I_{\text{عکس}}=I_{\text{حوالہ}}
 \ابتدا{مثال}
 \اصطلاح {منبع مستقل برقی رو} میں
 \begin{align*}
-V_{DD}=\SI{15}{\volt}, \hspace{5mm} k_n=\SI[per=frac,fraction=nice]{0.12}{\milli \ampere \per \volt \squared}, \hspace{5mm} V_t=\SI{2.1}{\volt}
+V_{DD}=\SI{15}{\volt}, \hspace{5mm} k_n=\SI{0.12}{\milli \ampere \per \volt \squared}, \hspace{5mm} V_t=\SI{2.1}{\volt}
 \end{align*}
 ہیں۔\عددی{I_{\text{عکس}}=\SI{2}{\milli \ampere}} حاصل کرنے کے لئے درکار \عددی{R_{\text{حوالہ}}} حاصل کریں۔
 
@@ -2287,7 +2287,7 @@ R_i \approx \left(\mu+1 \right) R_g
 %==============
 \ابتدا{مثال}
 شکل \حوالہ{شکل_ماسفیٹ_تابع_مخارج} الف میں استعمال کئے جانے والے ماسفیٹ کے
- \عددیء{k_n=\SI[per=frac,fraction=nice]{0.2}{\milli \ampere \per \volt \squared}}، \عددیء{V_t=\SI{-3}{\volt}} اور \عددی{r_o=\SI{90}{\kilo \ohm}} ہیں۔\عددی{\SI{15}{\volt}} کی منبع استعمال کرتے ہوئے \عددیء{I_{DSQ}=\SI{0.4}{\milli \ampere}}، \عددی{V_{DSQ}=\SI{10}{\volt}} اور \عددی{R_i=\SI{200}{\kilo \ohm}} حاصل کرنے کی خاطر درکار مزاحمت حاصل کریں۔
+ \عددیء{k_n=\SI{0.2}{\milli \ampere \per \volt \squared}}، \عددیء{V_t=\SI{-3}{\volt}} اور \عددی{r_o=\SI{90}{\kilo \ohm}} ہیں۔\عددی{\SI{15}{\volt}} کی منبع استعمال کرتے ہوئے \عددیء{I_{DSQ}=\SI{0.4}{\milli \ampere}}، \عددی{V_{DSQ}=\SI{10}{\volt}} اور \عددی{R_i=\SI{200}{\kilo \ohm}} حاصل کرنے کی خاطر درکار مزاحمت حاصل کریں۔
 
 حل:
 \begin{align*}
@@ -2316,7 +2316,7 @@ g_m=\sqrt{2 k_n I_{DS}}=\sqrt{2 \times 0.2 \times 10^{-3} \times 0.4 \times 10^{
 \end{align*}
 اور یوں \عددی{\mu=g_m r_o=36} حاصل ہوتا ہے۔\عددی{R_g \gg R_2} تصور کرتے ہوئے \عددی{R_s \approx R_1+R_2=\SI{12.5}{\kilo \ohm}} حاصل ہوتا ہے اور یوں مساوات \حوالہ{مساوات_ماسفیٹ_تابع_مخارج_افزائش_پ} سے
 \begin{align*}
-A_v \approx \frac{0.4 \times 10^{-3} \left(\frac{36}{36+1}\right) 12.5 \times 10^{3}}{1+0.4 \times 10^{-3}\times 12.5 \times 10^{3}}=\SI[per=frac,fraction=nice]{0.81}{\volt \per \volt}
+A_v \approx \frac{0.4 \times 10^{-3} \left(\frac{36}{36+1}\right) 12.5 \times 10^{3}}{1+0.4 \times 10^{-3}\times 12.5 \times 10^{3}}=\SI{0.81}{\volt \per \volt}
 \end{align*}
 حاصل ہوتا ہے۔
 

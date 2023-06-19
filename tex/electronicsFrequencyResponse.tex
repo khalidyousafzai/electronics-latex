@@ -369,19 +369,19 @@ R_{mCE}&=\SI{1560.83}{\ohm}
 \end{align*}
 حاصل ہوتے ہیں۔یوں \عددی{\frac{R_B}{\beta+1}+r_e=\SI{1742}{\ohm}} بنتا ہے جو کہ \عددی{R_E} سے بہت کم ہے۔ مساوات \حوالہ{مساوات_تعددی_ردعمل_مخارج_کپیسٹر_انقطاعی_تعدد}  کے تحت
 \begin{align*}
-\omega_1&=\frac{1}{15000 \times 10 \times 10^{-9}}=\SI[per=frac,fraction=nice]{6666}{\radian \per \second}\\
-\omega_2&=\frac{1}{1560.83 \times 10 \times 10^{-9}}=\SI[per=frac,fraction=nice]{64068}{\radian \per \second}
+\omega_1&=\frac{1}{15000 \times 10 \times 10^{-9}}=\SI{6666}{\radian \per \second}\\
+\omega_2&=\frac{1}{1560.83 \times 10 \times 10^{-9}}=\SI{64068}{\radian \per \second}
 \end{align*}
 حاصل ہوتے ہیں۔چونکہ \عددی{\omega_2^2}  کی قیمت \عددی{2 \omega_1^2} کے قیمت سے زیادہ ہے لہٰذا مساوات \حوالہ{مساوات_تعددی_ردعمل_پست_انقطاعی_تعدد_سادہ_مساوات}  کے تحت
 \begin{align*}
-\omega_L&=\sqrt{64068^2  -  2 \times 6666^2} =\SI[per=frac,fraction=nice]{63370}{\radian \per \second}\\
+\omega_L&=\sqrt{64068^2  -  2 \times 6666^2} =\SI{63370}{\radian \per \second}\\
 f_L&=\frac{63370}{2 \times \pi}=\SI{10}{\kilo \hertz}
 \end{align*}
-حاصل ہوتا ہے۔اگر اس مساوات میں \عددی{2 \omega_1^2} کو نظر انداز کیا جائے تب \عددی{\omega_L} کی قیمت \عددی{\SI[per=frac,fraction=nice]{64068}{\radian \per \second}} حاصل ہوتی ہے۔ان دو جوابات میں نہایت کم فرق ہے۔
+حاصل ہوتا ہے۔اگر اس مساوات میں \عددی{2 \omega_1^2} کو نظر انداز کیا جائے تب \عددی{\omega_L} کی قیمت \عددی{\SI{64068}{\radian \per \second}} حاصل ہوتی ہے۔ان دو جوابات میں نہایت کم فرق ہے۔
 
 مساوات \حوالہ{مساوات_تعددی_ردعمل_مخارج_کپیسٹر_درمیانی_تعدد_افزائش}  سے درمیانی تعدد کی افزائش حاصل کرتے ہیں۔
 \begin{align*}
-A_{vD}=-\frac{75000 \times 4.064 \times 10^{-3} \times 246}{\frac{269300}{179+1}+246}=\SI[per=frac,fraction=nice]{-43}{\volt \per \volt}
+A_{vD}=-\frac{75000 \times 4.064 \times 10^{-3} \times 246}{\frac{269300}{179+1}+246}=\SI{-43}{\volt \per \volt}
 \end{align*}
 اور یوں کسی بھی تعدد پر افزائش کی مساوات مندرجہ ذیل ہو گی۔
 \begin{align}\label{مساوات_تعددی_ردعمل_مخارج_کپیسٹر}
@@ -451,7 +451,7 @@ A_{vD}&=\eval{A_v}_{\omega \to \infty}=-\frac{R_C R_L}{R_C + R_L}   \left(\frac{
 \حصہ{بوڈا خطوط}
 ایمپلیفائر کے افزائش بالمقابل تعدد کے خط کو عموماً \اصطلاح{بوڈا خط}\فرہنگ{بوڈا خط}\فرہنگ{Bode plot}\حاشیہب{Bode plot} کے طرز پر کھینچا جاتا ہے\حاشیہد{ہنڈرک واڈ بوڈا نے خط کھینچنے کے اس طرز کو دریافت کیا۔ان خطوط کو بوڈا یا بوڈی خطوط پکارا جاتا ہے}۔افزائش کی حتمی قیمت بالمقابل تعدد اور افزائش کا زاویہ بالمقابل تعدد کے خط علیحدہ علیحدہ کھینچے جاتے ہیں جنہیں \اصطلاح{حتمی قیمت بالمقابل تعدد کا بوڈا خط} اور \اصطلاح{زاویہ بالمقابل تعدد کا بوڈا خط} پکارا جاتا ہے۔\اصطلاح{حتمی قیمت بالمقابل تعدد کے بوڈا خط} میں افقی محدد پر \عددی{\log \omega} یا \عددی{\log f} جبکہ اس کے عمودی محدد پر \عددی{20 \log \abs{A_v}} رکھے جاتے ہیں۔یوں عمودی محدد پر حتمی قیمت \اصطلاح{ڈیسی بیل}\فرہنگ{ڈیسی بیل}\حاشیہب{dB}\فرہنگ{dB} میں پائی جائے گی۔\اصطلاح{زاویہ بالمقابل تعدد کے بوڈا خط} میں افقی محدد پر \عددی{\log \omega} یا \عددی{\log f} جبکہ عمودی محدد پر زاویہ \عددی{\theta} رکھا جاتا ہے۔بوڈا خطوط کو سمجھنے کی خاطر مساوات \حوالہ{مساوات_تعددی_ردعمل_مخارج_کپیسٹر_معیاری_مساوات_الف} کو مثال بناتے ہوئے افزائش کی \اصطلاح{حتمی قیمت بالمقابل تعدد کا بوڈا خط} کھینچتے ہیں۔ مساوات میں
 \begin{align*}
-A_{vD}&=\SI[per=frac,fraction=nice]{-177.8}{\volt \per \volt} \\
+A_{vD}&=\SI{-177.8}{\volt \per \volt} \\
 f_1&=\SI{100}{\hertz}\\
 f_2&=\SI{10}{\kilo \hertz}
 \end{align*}
@@ -903,13 +903,13 @@ A_v&=\frac{\frac{-R_c \beta}{r_i}\left(s+\omega_c\right) s}{\left(s+\omega_{q1} 
 \begin{align*}
 A_i&=\frac{i_L}{i_c} \times \frac{i_c}{i_b} \times  \frac{i_b}{v_b} \times \frac{v_b}{i_i} \\
   &=\left(\frac{-1000}{2000}\right) \left( 99\right) \left( \frac{1}{2000}\right)\left(1754\right) \\
-&=\SI[per=frac,fraction=nice]{-43}{\ampere \per \ampere}
+&=\SI{-43}{\ampere \per \ampere}
 \end{align*}
 یعنی \عددی{\SI{32.67}{dB}} حاصل ہوتا ہے۔
 
 ہم دیکھتے ہیں کہ \عددی{C_c} کی وجہ سے ایک عدد قطب
 \begin{align*}
-\omega_{qc}=\frac{1}{20 \times 10^{-6} \times 2000}=\SI[per=frac,fraction=nice]{25}{\radian \per \second}
+\omega_{qc}=\frac{1}{20 \times 10^{-6} \times 2000}=\SI{25}{\radian \per \second}
 \end{align*}
 پر پایا جائے گا۔\عددی{C_e} اور \عددی{C_b} کے کردار پر اب غور کرتے ہیں۔\عددی{C_e} کا عکس ٹرانزسٹر کے بیس  جانب لیا گیا ہے جو کہ \عددی{\SI{1}{\micro \farad}} کے برابر ہے۔یوں جن تعدد پر \عددی{\SI{1}{\micro \farad}} اہمیت رکھتا ہے ان تعدد پر \عددی{C_b} بطور قصر دور کردار ادا کرے گا۔\عددی{C_b} کو قصر دور تصور کرتے ہوئے \عددی{\SI{1}{\micro \farad}} کے متوازی کل مزاحمت
 \begin{align*}
@@ -917,7 +917,7 @@ R_e' \mathbin{\|} \left(r_{be}+r_i \mathbin{\|} R_b \right)=\SI{8.976}{\kilo \oh
 \end{align*} 
 حاصل ہوتا ہے  لہٰذا \عددی{\SI{1}{\micro \farad}} سے حاصل قطب
 \begin{align*}
-\omega_{qe}=\frac{1}{10^{-6} \times 8976}=\SI[per=frac,fraction=nice]{111.4}{\radian \per \second}
+\omega_{qe}=\frac{1}{10^{-6} \times 8976}=\SI{111.4}{\radian \per \second}
 \end{align*}   
 پر پایا جائے گا۔اسی طرح  جن تعدد پر \عددی{\SI{10}{\micro \farad}} اہمیت رکھتا ہے ان تعدد پر \عددی{\SI{1}{\micro \farad}} بطور کھلے دور کردار ادا کرے گا۔\عددی{\SI{1}{\micro \farad}} کو کھلے دور تصور کرتے ہوئے \عددی{\SI{10}{\micro \farad}} کے متوازی کل مزاحمت
 \begin{align*}
@@ -925,7 +925,7 @@ r_i + R_b \mathbin{\|} \left[r_{be}+R_e' \right] =\SI{60.476}{\kilo \ohm}
 \end{align*} 
 حاصل ہوتا ہے اور یوں
 \begin{align*}
-\omega_{qb}=\frac{1}{10 \times 10^{-6} \times 60476}=\SI[per=frac,fraction=nice]{1.65}{\radian \per \second}
+\omega_{qb}=\frac{1}{10 \times 10^{-6} \times 60476}=\SI{1.65}{\radian \per \second}
 \end{align*}
 پر قطب پایا جائے گا۔
 %
@@ -1395,7 +1395,7 @@ C_{b'e} r_e &= \frac{C_{b'e} r_{b'e}}{\beta} =\frac{1}{\beta \omega_{\beta}}=\fr
 لہٰذا \عددی{f_1} تعدد پر \عددی{\abs{A_i}} ناپ کر \عددی{f_T} کی قیمت کا تخمینہ لگایا جاتا ہے۔\عددی{f_T} کو استعمال کرتے ہوئے مساوات \حوالہ{مساوات_تعددی_ردعمل_کپیسٹر_کا_تخمینہ} سے \عددی{C_{b'e}}  کی قیمت حاصل کی جاتی ہے۔
 
 \ابتدا{مثال}
-ایک ٹرانزسٹر جس کا \عددیء{\beta=200}،\عددی{I_{CQ}=\SI{0.75}{mA}} اور \عددی{f_{\beta}=\SI{1.3}{\mega \hertz}} ہے کا \عددی{\SI{6.5}{\mega \hertz}} کے تعدد  پر \عددی{\abs{A_i}_{v_{ce}=0}} ناپتے ہوئے \عددی{\SI[per=frac,fraction=nice]{41.5}{\ampere \per \ampere}}حاصل ہوتا ہے۔اس کی \عددی{f_T} کا تخمینہ لگاتے ہوئے \عددی{C_{b'e}} حاصل کریں۔
+ایک ٹرانزسٹر جس کا \عددیء{\beta=200}،\عددی{I_{CQ}=\SI{0.75}{mA}} اور \عددی{f_{\beta}=\SI{1.3}{\mega \hertz}} ہے کا \عددی{\SI{6.5}{\mega \hertz}} کے تعدد  پر \عددی{\abs{A_i}_{v_{ce}=0}} ناپتے ہوئے \عددی{\SI{41.5}{\ampere \per \ampere}}حاصل ہوتا ہے۔اس کی \عددی{f_T} کا تخمینہ لگاتے ہوئے \عددی{C_{b'e}} حاصل کریں۔
 
 حل: مساوات \حوالہ{مساوات_تعددی_ردعمل_کسر_دور_انقطاعی_تعدد_تخمینہ} کی مدد سے
 \begin{align*}
@@ -2140,7 +2140,7 @@ A_{vD}&=\frac{-0.04788 \times 7000 \times 1873}{100+1873}=\SI{-318}{\volt \per \
 \end{align*}
 اور مساوات \حوالہ{مساوات_تعددی_ردعمل_کیسکوڈ_بلند_انقطاعی_تعدد} کی مدد سے
 \begin{align*}
-\omega_H&=\frac{1}{\left(30 \times 10^{-12}+2 \times 3 \times 10^{-12} \right) \left(\frac{100 \times 1873}{100+1873} \right)}=\SI{293}{\mega \rad \per \second}\\
+\omega_H&=\frac{1}{\left(30 \times 10^{-12}+2 \times 3 \times 10^{-12} \right) \left(\frac{100 \times 1873}{100+1873} \right)}=\SI{293}{\mega \radian \per \second}\\
 f_H&=\frac{293000000}{2 \pi}=\SI{46.6}{\mega \hertz}
 \end{align*}
 حاصل ہوتا ہے۔
@@ -2644,7 +2644,7 @@ r_{be}&=\frac{\beta V_T}{I_{CQ}}
 \label{شکل_تعددی_ردعمل_سوال_قابو_مخارج_اور_محاصل_کپیسٹر}
 \end{figure}
 
-جوابات:\عددیء{\SI{155}{\micro \farad}}،\عددیء{\SI{66.6}{\micro \farad}}، \عددیء{\SI{7.1}{\micro \farad}}، \عددی{\SI[per=frac,fraction=nice]{-138}{\ampere \per \ampere}}
+جوابات:\عددیء{\SI{155}{\micro \farad}}،\عددیء{\SI{66.6}{\micro \farad}}، \عددیء{\SI{7.1}{\micro \farad}}، \عددی{\SI{-138}{\ampere \per \ampere}}
 \انتہا{سوال}
 %=========
 
