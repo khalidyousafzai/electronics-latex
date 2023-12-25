@@ -25,7 +25,8 @@ math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega,text-degree=°,
 
 \includeonly{./tex/electronicsSymbols,./tex/electronicsPreface,./tex/prefaceFirstBook,./tex/electronicsOPAMP,./tex/electronicsDiode,./tex/electronicsBJT,./tex/electronicsMOSFET,./tex/electronicsDifferencePair,./tex/electronicsFrequencyResponse,./tex/electronicsFeedback,./tex/electronicsOscillators}     %this decides what is included
 
-%\includeonly{./tex/electronicsSymbols,./tex/electronicsPreface,./tex/prefaceFirstBook,./tex/electronicsDiode}
+%\includeonly{,./tex/electronicsPreface,./tex/electronicsOPAMP}  
+%\includeonly{./tex/test}
 
 
 \author{
@@ -38,6 +39,18 @@ math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega,text-degree=°,
 \title{مماثل برقیات}
 %\date{}                           %if absent gives date in arabic which is a rubbish
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%included the following to correct the RTL issues with equation numbering after upgradation to ubuntu 18.04
+%might break bidi package as said on the internet
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\RTL{{\beginR #1\endR}}}}
+\def\tagform@#1{\maketag@@@{(\ignorespaces{\beginR#1\endR}\unskip)}}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlatin
 
 %\makeindex
 
@@ -47,7 +60,7 @@ math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega,text-degree=°,
 \begin{document}
 \sloppy
 
-%\renewcommand*{\contentsname}{عنوان}    %this command has to be placed right here
+\renewcommand*{\contentsname}{عنوان}    %this command has to be placed right here
 
 \frontmatter                          %just added instead of \pagenumbering{roman}
 %%\pagenumbering{roman}    
@@ -74,6 +87,8 @@ math-micro=\textup{µ},text-micro=µ,math-ohm  =\upOmega,text-degree=°,
 \include{./tex/electronicsFrequencyResponse}
 \include{./tex/electronicsFeedback}
 \include{./tex/electronicsOscillators}
+
+%\include{./tex/test}
 
 
 \backmatter
