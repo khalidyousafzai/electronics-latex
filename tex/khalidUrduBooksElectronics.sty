@@ -42,17 +42,18 @@
 
 \setmainlanguage{urdu}
 \setotherlanguage{english}
-%\newfontfamily\urdufont[Scale=1.0]{Jameel Noori Nastaleeq}             %defining urdufont attaches it to mainlanguage{urdu} defined above
+%\newfontfamily\urdufont[Script=Arabic,Scale=1.0]{Jameel Noori Nastaleeq}             %defining urdufont attaches it to mainlanguage{urdu}
 \setmainfont[Script=Arabic,Scale=1.0]{Jameel Noori Nastaleeq}       
 
 \newfontfamily\urdufontsf[Script=Arabic,Scale=1.0]{Jameel Noori Nastaleeq}
 \newfontfamily\urdufonttt[Script=Arabic,Scale=1.0]{Jameel Noori Nastaleeq}
 
 \newfontfamily\urduTechTermsfont[Scale=1.0,Script=Arabic]{AA Sameer Sagar Nastaleeq Bold}
-%\setlength{\parskip}{5mm plus 4mm minus 3mm}
-
-
-%%\newfontfamily\AcaciasHand{AcaciasHand}
+%KKK???
+% Force western digits to bypass polyglossia's default arabic-indic ones
+%\def\urdunumber#1{\number#1}                                                                  %english digits
+\def\urdunumber#1{\protect\farsidigits{\number#1}}			%gives urdu nos in text and arabic in toc 
+%\def\urdunumber#1{\protect\arabicdigits{\number#1}}            %gives missing U+0660 fonts and  displays nothing in text. toc is arabic nos.
 
 \setcounter{secnumdepth}{3} 
 
