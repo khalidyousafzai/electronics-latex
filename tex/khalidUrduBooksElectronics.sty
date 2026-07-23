@@ -53,6 +53,7 @@
 % Force western digits to bypass polyglossia's default arabic-indic ones
 %\def\urdunumber#1{\number#1}                                                                  %english digits
 \def\urdunumber#1{\protect\farsidigits{\number#1}}			%gives urdu nos in text and arabic in toc 
+\def\اردوعدد#1{\protect\farsidigits{\number#1}}			%gives urdu nos in text and arabic in toc 
 %\def\urdunumber#1{\protect\arabicdigits{\number#1}}            %gives missing U+0660 fonts and  displays nothing in text. toc is arabic nos.
 
 \setcounter{secnumdepth}{3} 
